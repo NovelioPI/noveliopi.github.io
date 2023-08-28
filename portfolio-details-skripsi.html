@@ -90,19 +90,20 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/enose/image1.png" alt="">
+                  <img src="assets/img/portfolio/skripsi/Picture1.png" alt="">
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/enose/image10.jpg" alt="">
+                  <img src="assets/img/portfolio/skripsi/Picture2.png" alt="">
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/enose/image3.png" alt="">
+                  <video width="100%" height="100%" controls autoplay muted>
+                    <source src="assets/img/portfolio/skripsi/Hasil Pengujian Lingkungan Simulator.mp4" type="video/mp4"></source>
+                  </video>
                 </div>
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/enose/image6.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/enose/image8.png" alt="">
+                  <video width="100%" height="100%" controls autoplay muted>
+                    <source src="assets/img/portfolio/skripsi/Hasil Pengujian Lingkungan Nyata.mp4" type="video/mp4"></source>
+                  </video>
                 </div>
 
               </div>
@@ -114,20 +115,20 @@
             <div class="portfolio-info">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Category</strong>: IoT, Embedded Systems, and Machine Learning</li>
-                <li><strong>Location</strong>: PT Yogya Presisi Teknikatama Industri </li>
-                <li><strong>Project date</strong>: Apr 2022 - Aug 2022</li>
-                <li><strong>Project URL</strong>: <i>(Sorry, the code is private due to company request)</i></li>
+                <li><strong>Category</strong>: Embedded Systems and Robotics</li>
+                <li><strong>Location</strong>: Universitas Gadjah Mada </li>
+                <li><strong>Project date</strong>: Aug 2022 - Jul 2023</li>
+                <li><strong>Project URL</strong>: <a href="https://github.com/NovelioPI/HWIL-Quadrotor">Simulator</a> and <a href="https://github.com/NovelioPI/Quadrotor-Teensy">Flight Controller</a></li>
               </ul>
             </div>
             <div class="portfolio-description">
               <h2>Detail</h2>
               <p>
-                This research project aims to develop a prototype of an IoT-based smart instrument that can be used for early detection of vapor from polymer compounds and harmful pollutants. This smart instrument utilizes an array of chemical gas sensors that can convert various pollutant gases and polymer vapors into patterned electrical signals. The digital data of these electrical signals is sent in real-time through the IoT system, and it is analyzed using deep learning as artificial intelligence. The processed results are displayed online as information and early warnings if hazardous pollutants and polymer vapors that could affect the respiratory system and visual senses are identified. In this project, my tasks include:
+                The quadrotor needs a stable control system to maintain position. Direct parameter tuning can lead to instability and crashes. To tackle this, I made a simulation-based approach using Gazebo and ROS to replicate real-world conditions for tuning. In this project, I do:
                 <ul>
-                  <li> Developed firmware to read polymer compound vapors from array gas sensors using Arduino Mega.</li>
-                  <li> Created ANN Model to classify industrial hazardous compound vapor that was implemented in Jetson Nano.</li>
-                  <li> Developed firmware for IoT device using ESP8266 to send sensor data to the dashboard using the MQTT Protocol.</li>
+                  <li> Developed Flight Controller firmware for controlling drone using IMU MPU-6050, HC-SR04, and BLDC Motor.</li>
+                  <li> Developed real-world simulation using ROS and Gazebo</li>
+                  <li> Developed communication between Flight Controller and Simulator using Google Protocol Buffers</li>
                 </ul>
               </p>
             </div>
